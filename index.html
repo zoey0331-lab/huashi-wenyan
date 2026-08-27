@@ -277,7 +277,7 @@ a{color:inherit;text-decoration:none}
     <a class="tel" id="telBtn" href="tel:19058141302">✆ 电话联系我</a>
     <a class="xhs" href="https://xhslink.cn/m/AjzR7MGuqz2" target="_blank">📕 小红书主页</a>
   </div>
-  <div class="hint">华南师大文学理论考研 · 文学理论 / 西方文论 / 古代文论 · v2.9.0 数据更新 2026.08</div>
+  <div class="hint">华南师大文学理论考研 · 文学理论 / 西方文论 / 古代文论 · v2.9.1 数据更新 2026.08</div>
 </footer>
 
 <script src="qbank.js"></script>
@@ -886,13 +886,13 @@ function renderMe(){
 /* ================= 续费 ================= */
 function renderRe(){
   const end = currentEnd();
-  let html = '<div class="note">资料到期后需续费使用 · 续费后有效期顺延</div>';
+  let html = '<div class="note">三个月后自动到期，续费请联系 Zoey 学姐，电话 19058141302</div>';
   html += '<div style="display:flex;gap:10px;margin:12px 0">' +
     '<div style="flex:1;background:#F1EDE2;border:1px solid #D9D2C2;border-radius:10px;padding:18px 12px;text-align:center"><div style="font-size:13px;color:#8A8578">月卡</div><div style="font-size:24px;font-weight:700;color:#BC563D;margin-top:6px">36.6<span style="font-size:12px">元/月</span></div><div style="font-size:11px;color:#8A8578;margin-top:6px">按需续费</div></div>' +
     '<div style="flex:1;background:#4E6B58;border:1px solid #4E6B58;border-radius:10px;padding:18px 12px;text-align:center;color:#FBF8F1"><div style="font-size:13px;color:#D8E4DC">年卡</div><div style="font-size:24px;font-weight:700;margin-top:6px">180<span style="font-size:12px">元/年</span></div><div style="font-size:11px;color:#D8E4DC;margin-top:6px">全年最划算</div></div></div>';
   html += '<div style="background:#FBF8F1;border:1px solid #D9D2C2;border-radius:10px;padding:16px;text-align:center;margin-bottom:12px">' +
-    '<div style="font-size:13px;color:#6B6457">当前有效期至：<b style="color:#2B2A26">'+(end.getFullYear()+"-"+String(end.getMonth()+1).padStart(2,"0")+"-"+String(end.getDate()).padStart(2,"0"))+'</b></div>' +
-    '<div style="font-size:12px;color:#8A8578;margin-top:6px">续费请联系 Zoey：电话 19058141302 · 小红书 @Zoey 快去学习</div>' +
+    '<div style="font-size:13px;color:#6B6457">三个月后自动到期（<b style="color:#2B2A26">'+(end.getFullYear()+"-"+String(end.getMonth()+1).padStart(2,"0")+"-"+String(end.getDate()).padStart(2,"0"))+'</b>）</div>' +
+    '<div style="font-size:12px;color:#8A8578;margin-top:6px">续费请联系 Zoey 学姐，电话 19058141302</div>' +
     '<button class="gbtn" onclick="location.href=\'tel:19058141302\'">电话咨询</button></div>';
   html += '<div class="note">已付费？输入 Zoey 提供的续费码解锁：</div>' +
     '<div style="text-align:center;margin:12px 0"><input id="renewCode2" placeholder="月卡码 / 年卡码" style="width:240px;max-width:80%;padding:11px 14px;border:1px solid #C9BFAA;border-radius:8px;font-size:14px;background:#fffdf8;text-align:center;letter-spacing:2px"/>' +
@@ -924,15 +924,15 @@ function renderSh(){
   <div style="color:#BC563D;font-size:16px;letter-spacing:3px;font-weight:700;">Zoey 印</div>
   <div style="font-size:22px;font-weight:700;margin-top:18px;color:#2F2B26;">免费使用期已结束</div>
   <div style="font-size:14px;color:#6E675B;margin-top:14px;line-height:1.9;">
-    续费 36.6 元/月，联系 Zoey 获取续费码：<br>
-    电话 19058141302 · 小红书 @Zoey 快去学习
+    本期已到期，续费请联系 Zoey 学姐：<br>
+    电话 19058141302
   </div>
   <button onclick="location.href='tel:19058141302'" style="margin-top:22px;background:#3F5C4B;color:#FBF9F2;border:none;border-radius:8px;padding:12px 30px;font-size:14px;letter-spacing:1px;">电话续费咨询</button>
   <div style="margin-top:26px;padding-top:22px;border-top:1px dashed #D9D2C2">
     <input id="renewCode" placeholder="输入 Zoey 提供的续费码" style="width:240px;max-width:80%;padding:11px 14px;border:1px solid #C9BFAA;border-radius:8px;font-size:14px;background:#fffdf8;text-align:center;letter-spacing:2px"/>
     <button onclick="tryRenew()" style="margin-left:10px;background:#BC563D;color:#fff;border:none;border-radius:8px;padding:11px 22px;font-size:14px;letter-spacing:1px;">解锁</button>
   </div>
-  <div style="margin-top:16px;font-size:12px;color:#8A8578">续费后有效期延长 1 个月 · 定制规划与批改请私信咨询</div>
+  <div style="margin-top:16px;font-size:12px;color:#8A8578">续费后有效期自动延长 · 定制规划与批改请私信咨询</div>
 </div>
 <script>
 (function(){
